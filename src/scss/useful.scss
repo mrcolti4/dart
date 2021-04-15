@@ -1,0 +1,97 @@
+.easy-tool {
+    padding: 100px 0;
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        font-size: 25px;
+        font-weight: 600;
+        color: $semi_color;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 1 33.333%;
+        margin-top: 100px;
+        margin-bottom: 78px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 345px;
+        margin: 0 15px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+}
+.item-tool {
+    &__img {
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        color: $semi_color;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        color: $main_color;
+        margin-bottom: 20px;
+    }
+}
+@media screen and(max-width: $md2 + "px") {
+    .easy-tool {
+        &__row {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item {
+            max-width: 200px;
+        }
+    }
+}
+@media screen and(max-width: $md3 + "px") {
+    .easy-tool {
+        padding: 50px 0;
+    }
+}
+@media screen and(max-width: $md4 + "px") {
+    .easy-tool {
+        &__row {
+            flex-direction: column;
+        }
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            font-weight: 600;
+            color: $semi_color;
+        }
+        &__item {
+            margin-bottom: 20px;
+        }
+    }
+}

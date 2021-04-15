@@ -1,0 +1,15 @@
+.rub::after {
+    content: "\20BD";
+}
+
+.dollar::after {
+    content: "\0024";
+}
+
+.euro::after {
+    content: "\20AC";
+}
+
+.hryvna::after {
+    content: "\20B4";
+}

@@ -1,0 +1,39 @@
+.btn {
+    text-transform: uppercase;
+    color: #fff;
+    width: 150px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.25s ease 0s;
+    font-size: 15px;
+    font-weight: 700;
+    &:hover {
+        cursor: pointer;
+    }
+    &-black {
+        background-color: $main_color;
+        width: 155px;
+        color: #fff;
+        margin-right: 30px;
+    }
+    &-white {
+        color: $main_color;
+        background-color: #fff;
+        width: 160px;
+    }
+    &-green {
+        background-color: #1de9b6;
+    }
+}
+@media screen and(min-width: $md2 + "px") {
+    .btn {
+        &:hover {
+            box-shadow: 0px 8px 12px #0099ff;
+            cursor: pointer;
+        }
+        &:active {
+            box-shadow: 0px 8px 12px #0099ff;
+        }
+    }
+}

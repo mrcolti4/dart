@@ -1,0 +1,125 @@
+
+
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face { 
+        font-family: $font_name; 
+        font-display: swap; 
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2"); font-weight: #{$weight}; 
+        font-style: #{$style}; 
+    }
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.woff2') format('woff2'),
+    url('../fonts/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-checkmark:before {
+  content: "\e910";
+}
+.icon-dribbble:before {
+  content: "\e900";
+}
+.icon-brand:before {
+  content: "\e900";
+}
+.icon-social:before {
+  content: "\e900";
+}
+.icon-linkedin:before {
+  content: "\e901";
+}
+.icon-brand1:before {
+  content: "\e901";
+}
+.icon-social1:before {
+  content: "\e901";
+}
+.icon-twitter:before {
+  content: "\e902";
+}
+.icon-brand2:before {
+  content: "\e902";
+}
+.icon-tweet:before {
+  content: "\e902";
+}
+.icon-social2:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-brand3:before {
+  content: "\e903";
+}
+.icon-show_chart:before {
+  content: "\e90f";
+}
+.icon-social3:before {
+  content: "\e903";
+}
+.icon-facebook1:before {
+  content: "\e904";
+}
+.icon-brand4:before {
+  content: "\e904";
+}
+.icon-social4:before {
+  content: "\e904";
+}
+.icon-email:before {
+  content: "\e905";
+}
+.icon-rss_feed:before {
+  content: "\e906";
+}
+.icon-keyboard_arrow_down:before {
+  content: "\e907";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e908";
+}
+.icon-arrow_drop_down:before {
+  content: "\e909";
+}
+.icon-settings:before {
+  content: "\e90a";
+}
+.icon-people_alt:before {
+  content: "\e90b";
+}
+.icon-person:before {
+  content: "\e90c";
+}
+.icon-file_download:before {
+  content: "\e90d";
+}
+.icon-get_app:before {
+  content: "\e90d";
+}
+.icon-business:before {
+  content: "\e90e";
+}
+.icon-domain:before {
+  content: "\e90e";
+}

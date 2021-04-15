@@ -1,0 +1,98 @@
+@import "swiper";
+@import "fonts";
+@import "vars";
+@import "icons";
+@import "forms";
+@import "header";
+@import "useful";
+@import "footer";
+@import "services";
+@import "info";
+@import "about-us";
+@import "team";
+@import "contact-form";
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font_name; 
+    box-sizing: border-box;
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: $main_color;
+}
+
+.container {
+    max-width: $container_width;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.sub-text {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 30px;
+    color: $semi_color;
+    max-width: 556px;
+    text-align: center;
+    &_white {
+        color: #fff;
+        text-align: left;
+        line-height: 24px;
+    }
+}
+@media screen and(max-width: $md3 + "px") {
+    .container {
+        padding: 0 10px;
+    }
+}
+//
+// HAMBURGER ICON
+//
+/*
+.menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.menu__icon span,
+.menu__icon::before,
+.menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+}
+.menu__icon::before,
+.menu__icon::after {
+    content: " ";
+}
+.menu__icon::before{
+    top: 0;
+}
+.menu__icon::after{
+    bottom: 0;
+}
+.menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%)
+}
+*/
